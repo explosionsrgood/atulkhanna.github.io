@@ -16,16 +16,15 @@ body {
 }
 
 #MockUpsTable1 img, #MockUpsTable2 img, #MockUpsTable3 img {
-	width: 500px;
-	height: 500px;
+	width: 150px;
+	height: 150px;
 }
 
-#MockUpsTable1 td, #MockUpsTable2 td, #MockUpsTable3 td{
+#MockUpsTable1 td, #MockUpsTable2 td, #MockUpsTable3 td {
 	border: 3px solid black;
 }
 
-#FirstParagraph p,  #SecondParagraph p, #ThirdParagraph p {
-	font-size: 12px;
+#MockUpsTable1 p, #MockUpsTable2 p, #MockUpsTable3 p {
+	font-size: 17px;
 	font-family: Tahoma;
 }
-
