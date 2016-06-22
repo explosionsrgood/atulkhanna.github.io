@@ -1,4 +1,31 @@
-img1 {
+body {
+	background-color: #b3f0ff;
+}
+
+#JournalTitle {
+	font-family: Tahoma;
+	text-align: center;
+}
+
+#FirstSessionMockUps {
+	font-family: Tahoma;
+}
+
+#SketchNo1Header, #SketchNo2Header, #SketchNo3Header {
+	font-family: Tahoma;
+}
+
+#MockUpsTable1 img, #MockUpsTable2 img, #MockUpsTable3 img {
 	width: 500px;
 	height: 500px;
 }
+
+#MockUpsTable1 td, #MockUpsTable2 td, #MockUpsTable3 td{
+	border: 3px solid black;
+}
+
+#FirstParagraph p,  #SecondParagraph p, #ThirdParagraph p {
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
