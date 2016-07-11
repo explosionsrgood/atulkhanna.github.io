@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#animationPane {
+			width: 500px;
+			height: 279px;
+			background-image: url("img/moonsurface.jpg");
+			background-size: cover;
+		}
+
+		#statictardis {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 200px;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+	<div id = "animationPane">
+		<img id = "statictardis" src = "img/tardisstatic.png">
+		<audio id = "tardisengine" src = "audio/tardisengine.mp3">
+		</audio>
+		<audio id = "themesong" loop src = "audio/themesong.mp3">
+		</audio>
+	</div>
+</body>
+<script>
+	var animationPane = document.querySelector('#animationPane');
+	var tardisengine = document.querySelector('#tardisengine');
+	var themesong = document.querySelector('#themesong');
+
+	var statictardis = document.querySelector('#statictardis');
+	statictardis.addEventListener("click", function() {
+		tardisengine.play();
+		window.setTimeout(function(){
+			statictardis.style.opacity = 0;
+		}, 0);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 1;
+		}, 1000);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 0;
+		}, 2000);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 1;
+		}, 3000);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 0;
+		}, 4000);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 1;
+		}, 5000);
+		window.setTimeout(function(){
+			statictardis.style.opacity = 0;
+		}, 6000);
+		window.setTimeout(function(){
+			animationPane.style.backgroundImage = "url('img/tardisintimevortex.gif')";
+		}, 7000);
+		window.setTimeout(function(){
+			themesong.play();
+		}, 7000);
+	}
+	);
+</script>
+</html>
